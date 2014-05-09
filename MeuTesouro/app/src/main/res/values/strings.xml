@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Meu Tesouro</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_money_title_list">Títulos Publicos</string>
+    <string name="sliding_menu_titie">Títulos</string>
+    <string name="sliding_menu_starred">Favoritos</string>
+
+</resources>
