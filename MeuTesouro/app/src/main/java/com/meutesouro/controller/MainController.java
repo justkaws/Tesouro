@@ -7,8 +7,6 @@ import android.util.Log;
 
 import com.meutesouro.entity.MoneyTitle;
 import com.meutesouro.fragments.MoneyTitleFragment;
-import com.meutesouro.fragments.SlidingMenuFragment;
-import com.meutesouro.app.MainActivity;
 import com.meutesouro.app.R;
 import com.meutesouro.observer.Action;
 import com.meutesouro.observer.Observer;
@@ -35,7 +33,7 @@ public class MainController implements Observer, IParserListener {
         mTitleList.add(new MoneyTitle().setName("NTNB Principal 150824").setFavorite(true));
         mTitleList.add(new MoneyTitle().setName("NTNB 150535")); 
         
-        mFragmentView.changeView(R.id.menu_frame, new SlidingMenuFragment(this));
+        //mFragmentView.changeView(R.id.menu_frame, new SlidingMenuFragment(this));
         
         receive(Action.Open_Money_Title_Screen);
 	}

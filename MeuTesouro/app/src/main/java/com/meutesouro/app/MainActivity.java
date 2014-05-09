@@ -2,8 +2,6 @@ package com.meutesouro.app;
 
 import android.os.Bundle;
 
-import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
-
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.Fragment;
 
@@ -14,7 +12,6 @@ import com.meutesouro.view.FragmentView;
 public class MainActivity extends FragmentActivity implements FragmentView {
 
     private static final String TAG = MainActivity.class.getSimpleName();
-	private SlidingMenu menu;
 	
 	private MainController mMainController;
 
@@ -28,15 +25,6 @@ public class MainActivity extends FragmentActivity implements FragmentView {
         //Log.d(TAG, "Total de Elementos: " + title2.size());
         
         // configure the SlidingMenu
-        menu = new SlidingMenu(this);
-        menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
-        menu.setShadowWidthRes(R.dimen.shadow_width);
-        menu.setShadowDrawable(R.drawable.shadow);
-        menu.setBehindOffsetRes(R.dimen.slidingmenu_offset);
-        menu.setFadeDegree(0.35f);
-        menu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
-        menu.setMenu(R.layout.menu_frame);
-        
         mMainController = new MainController(this);
         
 //        XmlUtils xmlUtil = new XmlUtils(getBaseContext());
@@ -60,7 +48,6 @@ public class MainActivity extends FragmentActivity implements FragmentView {
 	public void receive(Action action) {
 		switch (action) {
 		case Hide_Menu:
-			menu.toggle();
 			break;
 		default:
 			break;

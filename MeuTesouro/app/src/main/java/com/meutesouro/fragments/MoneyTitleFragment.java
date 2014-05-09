@@ -5,7 +5,6 @@ import java.util.List;
 
 import com.meutesouro.adapter.FavoriteListAdapter;
 import com.meutesouro.entity.MoneyTitle;
-import com.meutesouro.fragments.SlidingMenuFragment.SampleAdapter;
 import com.meutesouro.app.R;
 
 import android.annotation.SuppressLint;
